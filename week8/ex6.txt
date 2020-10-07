@@ -1,0 +1,5 @@
+16-bit virtual address => we have 2^16 possible addresses. 
+Pages are 8KB => 2^13 for the entire page
+
+Then, whole adress space can be divided into number at least needed for the pages:
+(2^16)/(2^13) = 8 => So 8 entries (equals to number of pages) are needed for a single-level linear page table.
