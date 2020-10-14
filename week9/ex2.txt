@@ -1,0 +1,35 @@
+Let's number of frames is = 7.
+
+1 2 3 4 5 6 1 8 9 10 1 12 13 14 15 16 17 18 1 20
+for this sequence of page numbers output:
+Hits: 2
+Misses: 18
+Ratio: 0.111111
+////////////////////////////////////////////////////////
+
+In this algorithm when there is no free frames, we replace any frames which was not referenced in last X 
+(X depends on existing time of page number in frame needed to be able to replace it) steps.  So to decrease the 
+ratio (decrease number of hits/increase misses) we should increase distance between two similar page
+numbers in sequence (at least more than X),
+
+Example to decrese from initial:
+seq : 1 2 3 4 5 6 7 8 1 10 11 12 13 14 15 16 1 18 19 1
+
+output:
+Hits: 1
+Misses: 19
+Ratio: 0.052632
+//////////////////////////////////////////////////////////
+
+Analogically to increase ratio, we need to increase number of same page numbers apear close(not far more than X)
+to each other in sequence.
+
+
+Example to increase from initial:
+seq: 1 2 3 4 1 6 7 8 9 10 1 12 13 14 15 1 17 18 19 20
+
+output:
+Hits: 3
+Misses: 17
+Ratio: 0.176471
+///////////////////////////////////////////////////////////
