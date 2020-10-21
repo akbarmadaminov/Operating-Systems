@@ -1,0 +1,2 @@
+Files with inum 587567: file1 link1
+Files with inum 587546: . ..

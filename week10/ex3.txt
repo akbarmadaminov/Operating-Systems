@@ -1,0 +1,11 @@
+1) chmod a-x _ex3.txt:
+   (rw-rw-rw-) => _ex3.txt
+2) chmod uo=rwx _ex3.txt:
+   (rwxrw-rwx) => _ex3.txt
+3) chmod g=u _ex3.txt :
+   (rwxrwxrwx) => _ex3.txt
+
+			u permission	g permission	o permission
+660 = (rw-rw----)	rw		rw		- 
+775 = (rwxrwxr-x)	rwx		rwx		rx	
+777 = (rwxrwxrwx) 	rwx		rwx		rwx

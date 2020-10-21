@@ -1,0 +1,17 @@
+: touch lab1/file.txt
+: cd lab10
+: link ./lab1/file.txt _ex2.txt
+: ls -i -l
+total 0
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak   0 Oct 20 14:33 _ex1.txt
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak   0 Oct 20 14:33 _ex1_1.txt
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak   0 Oct 20 14:33 _ex1_2.txt
+8444249301388221 -rwxrwxrwx 2 lnovak lnovak   0 Oct 20 22:56 _ex2.txt
+23925373020415909 -rwxrwxrwx 1 lnovak lnovak 215 Oct 20 21:13 ex1.txt
+: cd ..
+: find -inum 8444249301388221
+./Lab1/file.txt
+./Lab10/_ex2.txt
+: find -inum 8444249301388221 -exec rm {} \;
+: find -inum 8444249301388221
+: 

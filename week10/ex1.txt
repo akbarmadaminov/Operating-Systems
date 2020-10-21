@@ -1,0 +1,3 @@
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak  0 Oct 20 14:33 _ex1.txt
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak  0 Oct 20 14:33 _ex1_1.txt
+17169973579362735 -rwxrwxrwx 3 lnovak lnovak  0 Oct 20 14:33 _ex1_2.txt
