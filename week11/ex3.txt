@@ -1,0 +1,5 @@
+As in line buffering data in buffer will be written on output only when newline character is inserted 
+or in case when the buffer is full and stdout is line-buffered here, so:
+
+In the Program 1, before creating a child process buffer is not empty, that's why data will be printed in both processes
+In the Program 2, data is written on output and buffer is empty before fork() call, so there is only one printed 'Hello' in parent
